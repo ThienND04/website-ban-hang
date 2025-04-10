@@ -1,0 +1,42 @@
+<div class="container">
+    <form method="POST" action="/products/store">
+        <div class="form-group mb-3">
+            <label for="productName" class="form-label">Tên sản phẩm</label>
+            <input type="text" class="form-control" id="productName" name="name">
+        </div>
+        <div class="form-group mb-3">
+            <label for="price" class="form-label">Giá</label>
+            <input type="number" class="form-control" id="price" name="price">
+        </div>
+        <div class="form-group mb-3">
+            <label for="quantity" class="form-label">Số lượng</label>
+            <input type="number" class="form-control" id="quantity" name="quantity">
+        </div>
+        <div class="form-group mb-3">
+            <label for="description" class="form-label">Mô tả</label>
+            <input type="text" class="form-control" id="description" name="description">
+        </div>
+        <div class="mb-3">
+            <label for="categories" class="form-label">Categories</label>
+            <input type="text" class="form-control" id="categories" name="categories">
+        </div>
+        <div class="form-group mb-3">
+            <label for="description" class="form-label">Trạng thái</label>
+            <div class="input-group">
+                <select class="form-select" aria-label="Default select example" name="status">
+                    <option value="active">Đang bán</option>
+                    <option value="stopped">Dừng bán</option>
+                    <option value="empty">Hết hàng</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group mb-3">
+            <label for="description" class="form-label">Ảnh minh họa</label>
+            <div class="input-group">
+                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04"
+                    aria-label="Upload" name="image" multiple>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,36 @@
+{
+  "name": "website-ban-hang",
+  "version": "1.0.0",
+  "description": "website ban hang",
+  "keywords": [
+    "banhang",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/ThienND04/website-ban-hang#readme",
+  "bugs": {
+    "url": "https://github.com/ThienND04/website-ban-hang/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThienND04/website-ban-hang.git"
+  },
+  "license": "ISC",
+  "author": "ThienND04",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js",
+    "watch": "sass --watch src/resources/scss:src/public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.1",
+    "mongoose": "^8.13.2"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.9",
+    "sass": "^1.86.3"
+  }
+}
